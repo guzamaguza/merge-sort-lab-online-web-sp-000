@@ -15,14 +15,14 @@ function merge(firstHalf, secondHalf){
     return sorted.concat(firstHalf).concat(secondHalf);
 }
 
-function mergeSort(arr){
-  const arr;
-  let midPoint = arr.length / 2;
-  let fHalf = arr.slice(0,midPoint);
-  let sHalf = arr.slice(midPoint, arr.length);
+function mergeSort(array){
+  
+  let midPoint = array.length / 2;
+  let fHalf = array.slice(0,midPoint);
+  let sHalf = array.slice(midPoint, array.length);
 
-    if(arr.length === 1){
-      return arr;
+    if(array.length === 1){
+      return array;
     }else {
       merge(mergeSort(fHalf), mergeSort(sHalf))
     }
