@@ -9,10 +9,10 @@ function merge(firstHalf, secondHalf){
 let currentMin2 = findMinAndRemoveSorted(secondHalf)
 let currentMin1 = findMinAndRemoveSorted(firstHalf)
       if(currentMin1[0] > currentMin2[0]){
-          
+
           sorted.push(currentMin2)
       }else{
-          
+
           sorted.push(currentMin1)
       }
 
