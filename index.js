@@ -8,7 +8,7 @@ function merge(firstHalf, secondHalf){
     while(firstHalf.length != 0 && secondHalf.length != 0){
 let currentMin2 = findMinAndRemoveSorted(secondHalf)
 let currentMin1 = findMinAndRemoveSorted(firstHalf)
-      if(currentMin1[0] > currentMin2[0]){
+      if(currentMin1 > currentMin2){
 
           sorted.push(currentMin2)
       }else{
@@ -31,3 +31,4 @@ function mergeSort(arr){
       merge(mergeSort(fHalf), mergeSort(sHalf))
     }
   }
+
