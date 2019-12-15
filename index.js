@@ -31,4 +31,3 @@ function mergeSort(arr){
       merge(mergeSort(fHalf), mergeSort(sHalf))
     }
   }
-
