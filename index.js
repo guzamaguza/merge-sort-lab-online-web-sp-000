@@ -5,12 +5,14 @@ function findMinAndRemoveSorted(array){
 
 function merge(firstHalf, secondHalf){
     let sorted = []
-    if (firstHalf[0] > secondHalf[0]){
-        sorted.push(findMinAndRemoveSorted(secondHalf))
-    }else{
-        sorted.push(findMinAndRemoveSorted(firstHalf))
+    while (arr1.length !== 0 && arr2.length !== 0) {
+            if (firstHalf[0] > secondHalf[0]){
+                sorted.push(findMinAndRemoveSorted(secondHalf))
+            }else{
+                sorted.push(findMinAndRemoveSorted(firstHalf))
+            }
+        return sorted.concat(firstHalf).concat(secondHalf);
     }
-      return sorted.concat(firstHalf).concat(secondHalf);
 }
 
 function mergeSort(arr){
