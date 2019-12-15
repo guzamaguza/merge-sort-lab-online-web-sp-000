@@ -16,7 +16,8 @@ function merge(firstHalf, secondHalf){
 }
 
 function mergeSort(arr){
-  var midPoint = arr.length / 2;
+  const arr;
+  let midPoint = arr.length / 2;
   let fHalf = arr.slice(0,midPoint);
   let sHalf = arr.slice(midPoint, arr.length);
 
