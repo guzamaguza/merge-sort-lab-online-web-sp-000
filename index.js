@@ -14,7 +14,7 @@ function merge(firstHalf, secondHalf){
           sorted.push(currentMin1)
       }
     }
-      //return sorted.concat(firstHalf).concat(secondHalf);
+      return sorted;
 }
 
 function mergeSort(arr){
