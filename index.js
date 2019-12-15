@@ -26,5 +26,5 @@ function mergeSort(array){
     }else {
       sorted = merge(mergeSort(fHalf), mergeSort(sHalf))
     }
-    return sorted; 
+    return sorted;
   }
