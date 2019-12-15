@@ -24,6 +24,6 @@ function mergeSort(array){
     if(array.length === 1){
       return array;
     }else {
-      merge(mergeSort(fHalf), mergeSort(sHalf))
+      sorted = merge(mergeSort(fHalf), mergeSort(sHalf))
     }
   }
