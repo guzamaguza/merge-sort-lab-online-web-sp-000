@@ -21,7 +21,7 @@ function mergeSort(arr){
   let sHalf = arr.slice(midPoint, arr.length);
 
     if(arr.length === 1){
-      return array;
+      return arr;
     }else {
       merge(mergeSort(fHalf), mergeSort(sHalf))
     }
