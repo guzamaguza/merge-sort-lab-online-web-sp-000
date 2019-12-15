@@ -17,10 +17,10 @@ function merge(firstHalf, secondHalf){
 
 function mergeSort(array){
 
-  var midPoint = array.length / 2;
-  var fHalf = array.slice(0,midPoint);
-  var sHalf = array.slice(midPoint, array.length);
-
+  let midPoint = array.length / 2;
+  let fHalf = array.slice(0,midPoint);
+  let sHalf = array.slice(midPoint, array.length);
+  let sorted;
     if(array.length === 1){
       return array;
     }else {
