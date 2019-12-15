@@ -20,7 +20,7 @@ function mergeSort(arr){
   let fHalf = arr.slice(0,midPoint);
   let sHalf = arr.slice(midPoint, arr.length);
 
-    if(arr.length == 1){
+    if(arr.length === 1){
       return array;
     }else {
       merge(mergeSort(fHalf), mergeSort(sHalf))
